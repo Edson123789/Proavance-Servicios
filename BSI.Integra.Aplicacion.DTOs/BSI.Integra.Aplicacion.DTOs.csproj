@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Scode\DTOs\Extras\" />
+    <Folder Include="Scode\DTOs\Transversal\NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Mandrill" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BSI.Integra.Persistencia\BSI.Integra.Persistencia.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.Base\BSI.Integra.Aplicacion.Base.csproj" />
+  </ItemGroup>
+
+</Project>

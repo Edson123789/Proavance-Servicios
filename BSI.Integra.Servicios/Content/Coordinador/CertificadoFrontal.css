@@ -1,0 +1,208 @@
+﻿/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+@font-face {
+    font-family: 'LBRITE';
+    src: url('../../fonts/LBRITE.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'IMPRISHA';
+    src: url('../../fonts/IMPRISHA.TTF') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: LBRITE, Calibri, Arial, Helvetica, sans-serif, serif;
+    font-size: 6.5mm;
+    text-align: center;
+    /*text-rendering: geometricPrecision;*/
+    text-rendering: optimizeSpeed;
+}
+
+p, div, span {
+    margin: 0;
+    padding: 0;
+}
+
+.container, .contenedor {
+    /*background-image: url('../img/Coordinador/Certificado/certificado_reverso_.jpg');*/
+    /*background-image: url('../img/Coordinador/Certificado/frontal_certificado_completo.png');*/
+    /*background-image: url('../img/Coordinador/Certificado/frontal_impresion.png');*/
+    /*background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    height: 26.82cm;
+    width: 38cm;*/
+    margin: 0 auto;
+    /*width: 21cm;*/
+    position: relative;
+}
+
+.contenido {
+    margin: 0mm 30mm 0mm 30mm;
+    padding-top: 20mm;
+}
+
+.certificado {
+    background-image: url('../img/Coordinador/Certificado/frontal_certificado_completo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 26.82cm;
+    width: 38cm;
+}
+.certificado.no_impresion {
+    background-image: url('../img/Coordinador/Certificado/frontal_certificado_completo_light.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 26.82cm;
+    width: 38cm;
+}
+
+.diploma.no_impresion {
+    background-image: url('../img/Coordinador/Certificado/frontal_diploma_completo_light.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 26.82cm;
+    width: 38cm;
+}
+.diploma {
+    background-image: url('../img/Coordinador/Certificado/frontal_diploma_completo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 26.82cm;
+    width: 38cm;
+}
+
+.impresion {
+    background-image: url('../img/Coordinador/Certificado/frontal_impresion.png');
+}
+
+.logo {
+    height: 55mm;
+}
+.imagen-tipo-certificado {
+    height: 20mm;
+}
+.espacio_inicio_certificado {
+    height: 5mm;
+}
+
+.introduccion-nombre {
+    margin: 0mm 0mm 0 0;
+    text-align: left;
+}
+
+.nombre-alumno {
+    font-family: IMPRISHA, LBRITE, Calibri, Arial, Helvetica, sans-serif, serif;
+    /*font-weight: bold;*/
+    padding: 10px 0;
+    margin: 0 auto;
+    font-size: 10mm;
+}
+.otorgado {
+    padding: 0;
+}
+
+.mencion {
+    font-family: IMPRISHA, LBRITE, Calibri, Arial, Helvetica, sans-serif, serif;
+    /*font-weight: bold;*/
+    font-size: 9mm;
+}
+
+.introduccion-capacitacion {
+    margin: 5mm 0mm 0mm 0mm;
+    text-align: left;
+}
+.nombre-capacitacion {
+    font-family: IMPRISHA, LBRITE, Calibri, Arial, Helvetica, sans-serif, serif;
+    font-size: 10mm;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 10px 0;
+    /*font-weight: bold;*/
+}
+
+.complemento-partner-central {
+    font-family: Arial, Calibri, Helvetica, sans-serif, serif;
+    font-weight: normal;
+    font-size: 5mm;
+}
+
+.parrafo-datos {
+    font-size: 7.5mm;
+    margin-left: 10mm;
+    margin-right: 10mm;
+    text-align: center;
+}
+
+
+.comentario {
+    font-family: Arial, Calibri, Helvetica, sans-serif, serif;
+    font-size: 60%;
+}
+
+.fecha {
+    text-align: right;
+}
+
+.fila_firma {
+    position: absolute;
+    bottom: 20mm;
+    left: 0;
+    width: 100%;
+
+    display: inline-block;
+    width: 100%;
+}
+
+.fila_firma  img {
+    height: 40mm;
+}
+
+.firma {
+    float: left;
+    width: 49%;
+}
+
+.contenedor-firma img {
+    height: 60mm;
+}
+.firma-izquierda {
+    float: left;
+    text-align: right;
+    width: 50%
+}
+.firma-izquierda img{
+    margin-right: 20mm;
+}
+.firma-derecha {
+    float: right;
+    text-align: left;
+    width: 50%
+}
+.firma-derecha img {
+    margin-left: 20mm;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.inferior-izquierdo {
+    font-family: Arial, Calibri, Helvetica, sans-serif, serif;
+    font-size: 3mm;
+    float: left;
+    margin-bottom: 5.5mm;
+    margin-left: 10mm;
+    width: 40%;
+    text-align: left;
+}
+.inferior-derecho {
+    font-size: 4mm;
+    font-weight: bold;
+    float: right;
+    margin-bottom: 5.5mm;
+    margin-right: 10mm;
+}

@@ -1,0 +1,100 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace BSI.Integra.Persistencia.Models
+{
+    public partial class TDatoLandingPage
+    {
+        public int Id { get; set; }
+        public int? IdFormularioLandingPage { get; set; }
+        public string LpCodigo { get; set; }
+        public string PeCentroCosto { get; set; }
+        public string FlpCodigo { get; set; }
+        public int FlpHeader { get; set; }
+        public int FlpFooter { get; set; }
+        public string FlpMensaje { get; set; }
+        public string FstCampanha { get; set; }
+        public int? IdConjuntoAnuncio { get; set; }
+        public string FstProveedor { get; set; }
+        public string FstTextoBoton { get; set; }
+        public string FstCampo { get; set; }
+        public string FrtpNombre { get; set; }
+        public string FrtpCodigo { get; set; }
+        public int FrtpRedireccionar { get; set; }
+        public int FrtpTiempo { get; set; }
+        public string FrtpUrlDestino { get; set; }
+        public string FrtpMensaje { get; set; }
+        public int? Popup { get; set; }
+        public string Texto { get; set; }
+        public string TituloPopup { get; set; }
+        public int? IdCentroCostoPe { get; set; }
+        public string FlpColorPopup { get; set; }
+        public string FlpColorTitulo { get; set; }
+        public string FlpColorTextoBoton { get; set; }
+        public string FlpColorFondoBoton { get; set; }
+        public string FlpColorDescripcion { get; set; }
+        public string FlpColorFondoHeader { get; set; }
+        public string Cita1Texto { get; set; }
+        public string Cita1Color { get; set; }
+        public string Cita3Texto { get; set; }
+        public string Cita3Color { get; set; }
+        public string Cita4Texto { get; set; }
+        public string Cita4Color { get; set; }
+        public string FlpPgeneral { get; set; }
+        public bool? FlpCboMprograma { get; set; }
+        public string FlpCita1TextoDespues { get; set; }
+        public string FlpUrlImagen { get; set; }
+        public string FlpColorPlaceHolder { get; set; }
+        public string UrlLogotipo { get; set; }
+        public string NombrePgeneral { get; set; }
+        public string ColorTextoPgeneral { get; set; }
+        public string ResumenProgramaGeneral { get; set; }
+        public string TextoInvitacionBrochure { get; set; }
+        public string ColorTextoDescripcionPgeneral { get; set; }
+        public string ColorTextoInvitacionBrochure { get; set; }
+        public string TextoBotonBrochure { get; set; }
+        public string ColorFondoBotonBrochure { get; set; }
+        public string ColorTextoBotonBrochure { get; set; }
+        public string ColorBordeInferiorBotonBrochure { get; set; }
+        public string ColorTextoBotonInvitacion { get; set; }
+        public string ColorFondoBotonInvitacion { get; set; }
+        public string FondoBotonLadoInvitacion { get; set; }
+        public string UrlImagenLadoInvitacion { get; set; }
+        public string TextoBotonInvitacionPagina { get; set; }
+        public string TextoBotonInvitacionArea { get; set; }
+        public string ContenidoSeccionTelefono { get; set; }
+        public string UrlBotonInvitacionPagina { get; set; }
+        public string UrlBotonInvitacionArea { get; set; }
+        public string UrlBrochurePrograma { get; set; }
+        public int? IdPgeneral { get; set; }
+        public string CorreoRemitente { get; set; }
+        public string CorreoReceptor { get; set; }
+        public int? IdPlantilla { get; set; }
+        public int? TipoPlantilla { get; set; }
+        public string FormularioTituloTamanhio { get; set; }
+        public string FormularioTituloFormato { get; set; }
+        public string FormularioBotonTamanhio { get; set; }
+        public string FormularioBotonFormato { get; set; }
+        public string FormularioTextoTamanhio { get; set; }
+        public string FormularioTextoFormato { get; set; }
+        public string TituloTituloTamanhio { get; set; }
+        public string TituloTituloFormato { get; set; }
+        public string TituloTextoTamanhio { get; set; }
+        public string TituloTextoFormato { get; set; }
+        public string TextoTituloTamanhio { get; set; }
+        public string TextoTituloFormato { get; set; }
+        public string TextoTextoTamanhio { get; set; }
+        public string TextoTextoFormato { get; set; }
+        public int? IdListaPlantilla { get; set; }
+        public bool? EsTesteoAb { get; set; }
+        public int IdCategoriaOrigen { get; set; }
+        public string FormularioBotonPosicion { get; set; }
+        public bool Estado { get; set; }
+        public string UsuarioCreacion { get; set; }
+        public string UsuarioModificacion { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public DateTime FechaModificacion { get; set; }
+        public byte[] RowVersion { get; set; }
+        public Guid? IdMigracion { get; set; }
+    }
+}

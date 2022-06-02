@@ -1,0 +1,191 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Text;
+using AutoMapper;
+using BSI.Integra.Aplicacion.Marketing.BO;
+using BSI.Integra.Persistencia.Models;
+using BSI.Integra.Persistencia.Repository;
+
+namespace BSI.Integra.Aplicacion.Marketing.Repositorio
+{
+    public class AlumnoRepositorio : BaseRepository<TAlumno, AlumnoBO>
+    {
+        #region Metodos Base
+        public AlumnoRepositorio() : base()
+        {
+        }
+        public AlumnoRepositorio(integraDBContext contexto) : base(contexto)
+        {
+        }
+        public IEnumerable<AlumnoBO> GetBy(Expression<Func<TAlumno, bool>> filter)
+        {
+            IEnumerable<TAlumno> listado = base.GetBy(filter);
+            List<AlumnoBO> listadoBO = new List<AlumnoBO>();
+            foreach (var itemEntidad in listado)
+            {
+                AlumnoBO objetoBO = Mapper.Map<TAlumno, AlumnoBO>(itemEntidad, opt => opt.ConfigureMap(MemberList.None));
+                listadoBO.Add(objetoBO);
+            }
+
+            return listadoBO;
+        }
+        public AlumnoBO FirstById(int id)
+        {
+            try
+            {
+                TAlumno entidad = base.FirstById(id);
+                AlumnoBO objetoBO = new AlumnoBO();
+                Mapper.Map<TAlumno, AlumnoBO>(entidad, objetoBO, opt => opt.ConfigureMap(MemberList.None));
+
+                return objetoBO;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+        public AlumnoBO FirstBy(Expression<Func<TAlumno, bool>> filter)
+        {
+            try
+            {
+                TAlumno entidad = base.FirstBy(filter);
+                AlumnoBO objetoBO = Mapper.Map<TAlumno, AlumnoBO>(entidad, opt => opt.ConfigureMap(MemberList.None));
+
+                return objetoBO;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public bool Insert(AlumnoBO objetoBO)
+        {
+            try
+            {
+                //mapeo de la entidad
+                TAlumno entidad = MapeoEntidad(objetoBO);
+
+                bool resultado = base.Insert(entidad);
+                if (resultado)
+                    AsignacionId(entidad, objetoBO);
+
+                return resultado;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public bool Insert(IEnumerable<AlumnoBO> listadoBO)
+        {
+            try
+            {
+                foreach (var objetoBO in listadoBO)
+                {
+                    bool resultado = Insert(objetoBO);
+                    if (resultado == false)
+                        return false;
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public bool Update(AlumnoBO objetoBO)
+        {
+            try
+            {
+                if (objetoBO == null)
+                {
+                    throw new ArgumentNullException("Entidad nula");
+                }
+
+                //mapeo de la entidad
+                TAlumno entidad = MapeoEntidad(objetoBO);
+
+                bool resultado = base.Update(entidad);
+                if (resultado)
+                    AsignacionId(entidad, objetoBO);
+
+                return resultado;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public bool Update(IEnumerable<AlumnoBO> listadoBO)
+        {
+            try
+            {
+                foreach (var objetoBO in listadoBO)
+                {
+                    bool resultado = Update(objetoBO);
+                    if (resultado == false)
+                        return false;
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        private void AsignacionId(TAlumno entidad, AlumnoBO objetoBO)
+        {
+            try
+            {
+                if (entidad != null && objetoBO != null)
+                {
+                    objetoBO.Id = entidad.Id;
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        private TAlumno MapeoEntidad(AlumnoBO objetoBO)
+        {
+            try
+            {
+                //crea la entidad padre
+                TAlumno entidad = new TAlumno();
+                entidad = Mapper.Map<AlumnoBO, TAlumno>(objetoBO,
+                    opt => opt.ConfigureMap(MemberList.None));
+
+                //mapea los hijos
+
+                return entidad;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public IEnumerable<AlumnoBO> GetFiltered<KProperty>(IEnumerable<Expression<Func<TAlumno, bool>>> filters, Expression<Func<TAlumno, KProperty>> orderBy, bool ascending)
+        {
+            IEnumerable<TAlumno> listado = base.GetFiltered(filters, orderBy, ascending);
+            List<AlumnoBO> listadoBO = new List<AlumnoBO>();
+
+            foreach (var itemEntidad in listado)
+            {
+                AlumnoBO objetoBO = Mapper.Map<TAlumno, AlumnoBO>(itemEntidad, opt => opt.ConfigureMap(MemberList.None));
+                listadoBO.Add(objetoBO);
+            }
+            return listadoBO;
+        }
+        #endregion
+    }
+}

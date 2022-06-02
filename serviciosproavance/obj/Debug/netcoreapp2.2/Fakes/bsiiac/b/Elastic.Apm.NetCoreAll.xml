@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Elastic.Apm.NetCoreAll</name>
+    </assembly>
+    <members>
+        <member name="M:Elastic.Apm.NetCoreAll.ApmMiddlewareExtension.UseAllElasticApm(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Adds the Elastic APM Middleware to the ASP.NET Core pipeline and enables <see cref="T:Elastic.Apm.DiagnosticSource.HttpDiagnosticsSubscriber" />,
+            <see cref="T:Elastic.Apm.EntityFrameworkCore.EfCoreDiagnosticsSubscriber" />, and <see cref="T:Elastic.Apm.SqlClient.SqlClientDiagnosticSubscriber"/>.
+            This method turns on ASP.NET Core monitoring with every other related monitoring components, for example the agent
+            will also automatically trace outgoing HTTP requests and database statements.
+            </summary>
+            <returns>The elastic apm.</returns>
+            <param name="builder">Builder.</param>
+            <param name="configuration">
+            You can optionally pass the IConfiguration of your application to the Elastic APM Agent. By
+            doing this the agent will read agent related configurations through this IConfiguration instance.
+            If no <see cref="T:Microsoft.Extensions.Configuration.IConfiguration" /> is passed to the agent then it will read configs from environment variables.
+            </param>
+        </member>
+        <member name="M:Elastic.Apm.NetCoreAll.HostBuilderExtensions.UseAllElasticApm(Microsoft.Extensions.Hosting.IHostBuilder)">
+            <summary>
+            Register Elastic APM .NET Agent with components in the container and enables <see cref="T:Elastic.Apm.DiagnosticSource.HttpDiagnosticsSubscriber" />,
+            <see cref="T:Elastic.Apm.EntityFrameworkCore.EfCoreDiagnosticsSubscriber" />, and <see cref="T:Elastic.Apm.SqlClient.SqlClientDiagnosticSubscriber"/>.
+            </summary>
+            <param name="builder">Builder.</param>
+        </member>
+    </members>
+</doc>

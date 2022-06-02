@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SCode\BO\PgeneralBO.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13" />
+    <PackageReference Include="itextsharp.xmlworker" Version="5.5.13" />
+    <PackageReference Include="ITHit.WebDAV.Server.Web" Version="7.1.4830" />
+    <PackageReference Include="Microsoft.Azure.KeyVault.WebKey" Version="3.0.3" />
+    <PackageReference Include="Microsoft.Azure.Storage.DataMovement" Version="0.9.0" />
+    <PackageReference Include="Microsoft.WindowsAzure.ConfigurationManager" Version="3.2.3" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="RequestStrap" Version="0.2.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+    <PackageReference Include="WindowsAzure.Storage.NoTables" Version="7.2.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.Base\BSI.Integra.Aplicacion.Base.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.DTOs\BSI.Integra.Aplicacion.DTOs.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.Transversal\BSI.Integra.Aplicacion.Transversal.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Persistencia\BSI.Integra.Persistencia.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.IdentityModel.Protocols">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.identitymodel.protocols\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

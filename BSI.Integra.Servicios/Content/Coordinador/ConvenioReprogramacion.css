@@ -1,0 +1,55 @@
+﻿body {
+    background-color: white;
+    font-family: Arial;
+    font-size: 20px;
+    text-rendering: geometricPrecision;
+}
+.contenido {
+    margin: 0 auto;
+    width: 700px;
+}
+
+.codigo{
+    padding-top: 50px;
+    text-align: right;
+}
+
+p{
+    text-align: justify;
+}
+
+.titulo{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.parrafo_suscribe {
+    text-align: center;
+}
+
+.nombre {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.parrafo {
+    text-align: justify;
+}
+
+.firmas {
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+.firmas .espacio{
+    padding-top: 70px;
+}
+.firmas table{
+    width: 100%;
+}
+.firmas td{
+    width: 50%;
+}

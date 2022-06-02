@@ -1,0 +1,112 @@
+﻿/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+@font-face {
+    font-family: 'LBRITE';
+    src: url('../../fonts/LBRITE.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'IMPRISHA';
+    src: url('../../fonts/IMPRISHA.TTF') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: LBRITE, Calibri, Arial, Helvetica, sans-serif, serif;
+    font-size: 4mm;
+    /*text-rendering: geometricPrecision;*/
+    text-rendering: optimizeSpeed;
+}
+
+p, div, span {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-position: inside;
+}
+ul, ol {
+    padding-left: 0;
+}
+
+ol, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container, .contenedor {
+    /*background-image: url('../img/Coordinador/Certificado/certificado_reverso_.jpg');*/
+    /*background-image: url('../img/Coordinador/Certificado/frontal_certificado_completo.png');*/
+    /*background-image: url('../img/Coordinador/Certificado/frontal_impresion.png');*/
+    /*background-size: 100%;
+    background-repeat: no-repeat;
+    height: 26.82cm;
+    width: 38cm;*/
+    margin: 0 auto;
+    /*width: 21cm;*/
+    position: relative;
+}
+
+.contenedor {
+    background-image: url('../img/Coordinador/Certificado/reverso_completo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 26.82cm;
+    width: 38cm;
+}
+.contenedor.no_impresion {
+    background-image: url('../img/Coordinador/Certificado/reverso_completo_light.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 26.82cm;
+    width: 38cm;
+}
+
+.contenido {
+    height: 19cm;
+    margin: 0mm 35mm 0mm 40mm;
+    padding-top: 30mm;
+}
+
+.impresion {
+    background-image: url('../img/Coordinador/Certificado/reverso_impresion.png');
+}
+
+.fecha {
+    font-size: 5mm;
+    text-align: right;
+    position: absolute;
+    bottom: 35mm;
+    right: 35mm;
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inferior-izquierdo {
+    font-family: Arial, Calibri, Helvetica, sans-serif, serif;
+    font-size: 3mm;
+    float: left;
+    margin-bottom: 5.5mm;
+    margin-left: 10mm;
+    width: 40%;
+    text-align: left;
+}
+
+.inferior-derecho {
+    font-size: 4mm;
+    font-weight: bold;
+    float: right;
+    margin-bottom: 5.5mm;
+    margin-right: 10mm;
+}
+
+table td {
+    padding: 0 20px
+}

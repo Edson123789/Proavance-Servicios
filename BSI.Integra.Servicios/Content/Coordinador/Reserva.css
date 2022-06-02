@@ -1,0 +1,46 @@
+﻿body {
+    background-color: white;
+    font-family: Arial;
+    font-size: 20px;
+    text-rendering: geometricPrecision;
+}
+.container{
+    margin: 0 auto;
+    width: 700px;
+}
+
+.codigo_reserva{
+    padding-top: 50px;
+    text-align: right;
+}
+p{
+    text-align: justify;
+}
+
+.titulo{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.nombre{
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.firmas{
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+.firmas .espacio{
+    padding-top: 70px;
+}
+.firmas table{
+    width: 100%;
+}
+.firmas td{
+    width: 50%;
+}

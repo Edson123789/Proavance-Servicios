@@ -1,0 +1,24 @@
+﻿/*Los estilos son copia de CertificadoReverso (Actulizarlos en caso hayan actualizaciones)*/
+
+.contenido-certificado-brochure {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: LBRITE, Calibri, Arial, Helvetica, sans-serif, serif;
+    font-size: 4mm;
+    /*text-rendering: geometricPrecision;*/
+    text-rendering: optimizeSpeed;
+}
+
+li {
+    list-style-position: inside;
+}
+
+ul, ol {
+    padding-left: 0;
+}
+
+ol, ul, li, p {
+    margin: 0;
+    padding: 0;
+}

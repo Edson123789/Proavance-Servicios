@@ -1,0 +1,144 @@
+﻿body {
+    background-color: white;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    text-rendering: geometricPrecision;
+}
+.container{
+    margin: 0 auto;
+    padding-top: 0px;
+    width: 21cm;
+    /*width: 21cm;*/
+}
+.header{
+    height: 190px;
+    width: 100%;
+}
+.header .left{
+    float: left;
+    
+}
+.header .left .logo-constancia{
+    height: 190px;
+}
+
+.content{
+    text-align: justify;
+    width: 100%;
+}
+
+.content-large{
+    font-size: 24px; /*1.4em*/
+    line-height: 150%;
+}
+
+.content-medium{
+    font-size: 19px; /*1.4em*/
+}
+
+.content-small{
+    font-size: 16px; /*1.4em*/
+}
+
+p {
+    -ms-text-justify: auto;
+    text-justify: auto;
+}
+    
+.cabecera{
+    text-align: center;
+}
+.cabecera p{
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.resaltado{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.fecha {
+    padding-left: 50px;
+}
+
+.firma{
+    text-align:center;
+}
+.firma p img{
+    height: 180px;
+}
+.firma-space{
+    padding-top: 80px;
+}
+.correlativo{
+    font-size: 70%;
+    text-align:right;
+}
+.marca-registrada{
+    font-size: 60%;
+    text-align:left;
+}
+
+
+table{
+    margin:0 auto;
+    text-align: center;
+    border: 1px solid #000;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    border: 1px solid #000;
+    /*background-color: #000;*/
+}
+td{
+    border: 1px solid #000;
+}
+
+.izquierda{
+    text-align:left;
+    padding-left: 5px;
+}
+.nota{
+    width:70px;
+}
+.estado{
+    width:140px;
+}
+.asistencia{
+    width:90px;
+}
+.table-asistencia{
+    width: 80%;
+}
+
+
+/*Seccion para el footer*/
+.footer {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-rendering:auto;
+}
+.footer-content{
+    color: #999999; /*color: #575756;*/
+    margin: 0 auto;
+    padding: 0 0;  
+    width: 350px;  
+}
+.footer .linea{
+    border-top: solid 2px #afca0a;   
+    line-height:17px; 
+}
+.footer button{
+    background-color: #afca0a;
+    border: none;
+    border-radius: 5px 5px;
+    color: white;
+    font-weight:bold;
+    height:25px;
+    margin-top: 5px;
+    width: 100%;
+}

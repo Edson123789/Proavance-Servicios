@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SCode\BO\MessengerAsesor - Copia.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailBee.NET" Version="11.2.0" />
+    <PackageReference Include="Twilio" Version="5.26.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.Base\BSI.Integra.Aplicacion.Base.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.DTOs\BSI.Integra.Aplicacion.DTOs.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.Finanzas\BSI.Integra.Aplicacion.Finanzas.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.GestionPersonas\BSI.Integra.Aplicacion.GestionPersonas.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.Marketing\BSI.Integra.Aplicacion.Marketing.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.Planificacion\BSI.Integra.Aplicacion.Planificacion.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.Servicios\BSI.Integra.Aplicacion.Servicios.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Persistencia\BSI.Integra.Persistencia.csproj" />
+  </ItemGroup>
+
+</Project>

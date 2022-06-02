@@ -1,0 +1,1737 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid />
+    <RootNamespace />
+    <AssemblyName>BSI.Integra.Aplicacion.Comercial.1.0.0.0.Fakes</AssemblyName>
+    <OutputPath>b</OutputPath>
+    <IntermediateOutputPath>o</IntermediateOutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>$(NoWarn);1587;1591;</NoWarn>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE;$(CommonDefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;$(CommonDefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.qualitytools.testing.fakes\16.11.230815\lib\netstandard2.0\Microsoft.QualityTools.Testing.Fakes.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Aliases>mqttf</Aliases>
+    </Reference>
+    <Reference Include="AngleSharp">
+      <HintPath>C:\Users\user\.nuget\packages\anglesharp\0.13.0\lib\netstandard2.0\AngleSharp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AppOptics.Instrumentation">
+      <HintPath>C:\Users\user\.nuget\packages\appoptics.instrumentation\4.2.0\lib\netcoreapp2.1\AppOptics.Instrumentation.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>C:\Users\user\.nuget\packages\automapper\8.0.0\lib\netstandard2.0\AutoMapper.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AutoMapper.Extensions.Microsoft.DependencyInjection">
+      <HintPath>C:\Users\user\.nuget\packages\automapper.extensions.microsoft.dependencyinjection\6.0.0\lib\netstandard2.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Ben.Demystifier">
+      <HintPath>C:\Users\user\.nuget\packages\ben.demystifier\0.1.6\lib\netstandard2.0\Ben.Demystifier.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>C:\Users\user\.nuget\packages\bouncycastle.netcore\1.8.3\lib\netstandard2.0\BouncyCastle.Crypto.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BSI.Integra.Aplicacion.Finanzas">
+      <HintPath>D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Finanzas\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Finanzas.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BSI.Integra.Aplicacion.GestionPersonas">
+      <HintPath>D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.GestionPersonas\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.GestionPersonas.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BSI.Integra.Aplicacion.Maestros">
+      <HintPath>D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Maestros\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Maestros.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BSI.Integra.Aplicacion.Marketing">
+      <HintPath>D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Marketing\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Marketing.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BSI.Integra.Aplicacion.Operaciones">
+      <HintPath>D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Operaciones\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Operaciones.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BSI.Integra.Aplicacion.Planificacion">
+      <HintPath>D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Planificacion\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Planificacion.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BSI.Integra.Aplicacion.Reportes">
+      <HintPath>D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Reportes\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Reportes.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BSI.Integra.Aplicacion.Servicios">
+      <HintPath>D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Servicios\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Servicios.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>C:\Users\user\.nuget\packages\dapper\1.50.5\lib\netstandard2.0\Dapper.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Dia2Lib">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.diagnostics.tracing.traceevent\2.0.2\lib\netstandard1.6\Dia2Lib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elastic.Apm.AspNetCore">
+      <HintPath>C:\Users\user\.nuget\packages\elastic.apm.aspnetcore\1.8.1\lib\netstandard2.0\Elastic.Apm.AspNetCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elastic.Apm">
+      <HintPath>C:\Users\user\.nuget\packages\elastic.apm\1.8.1\lib\netstandard2.0\Elastic.Apm.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elastic.Apm.Elasticsearch">
+      <HintPath>C:\Users\user\.nuget\packages\elastic.apm.elasticsearch\1.8.1\lib\netstandard2.0\Elastic.Apm.Elasticsearch.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elastic.Apm.EntityFrameworkCore">
+      <HintPath>C:\Users\user\.nuget\packages\elastic.apm.entityframeworkcore\1.8.1\lib\netstandard2.0\Elastic.Apm.EntityFrameworkCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elastic.Apm.Extensions.Hosting">
+      <HintPath>C:\Users\user\.nuget\packages\elastic.apm.extensions.hosting\1.8.1\lib\netstandard2.0\Elastic.Apm.Extensions.Hosting.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elastic.Apm.Extensions.Logging">
+      <HintPath>C:\Users\user\.nuget\packages\elastic.apm.extensions.logging\1.8.1\lib\netstandard2.0\Elastic.Apm.Extensions.Logging.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elastic.Apm.GrpcClient">
+      <HintPath>C:\Users\user\.nuget\packages\elastic.apm.grpcclient\1.8.1\lib\netstandard2.0\Elastic.Apm.GrpcClient.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elastic.Apm.NetCoreAll">
+      <HintPath>C:\Users\user\.nuget\packages\elastic.apm.netcoreall\1.8.1\lib\netstandard2.0\Elastic.Apm.NetCoreAll.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elastic.Apm.SqlClient">
+      <HintPath>C:\Users\user\.nuget\packages\elastic.apm.sqlclient\1.8.1\lib\netstandard2.0\Elastic.Apm.SqlClient.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Elasticsearch.Net">
+      <HintPath>C:\Users\user\.nuget\packages\elasticsearch.net\7.6.0\lib\netstandard2.0\Elasticsearch.Net.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>C:\Users\user\.nuget\packages\entityframework\6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>C:\Users\user\.nuget\packages\entityframework\6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>C:\Users\user\.nuget\packages\epplus\4.5.3.2\lib\netcoreapp2.1\EPPlus.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="FluentValidation.AspNetCore">
+      <HintPath>C:\Users\user\.nuget\packages\fluentvalidation.aspnetcore\8.1.1\lib\netstandard2.0\FluentValidation.AspNetCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>C:\Users\user\.nuget\packages\fluentvalidation\8.1.1\lib\netstandard2.0\FluentValidation.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Google.Ads.Common">
+      <HintPath>C:\Users\user\.nuget\packages\google.ads.common\9.5.1\lib\netstandard2.0\Google.Ads.Common.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Google.AdWords">
+      <HintPath>C:\Users\user\.nuget\packages\google.adwords\24.6.0\lib\netstandard2.0\Google.AdWords.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Google.Apis.Auth">
+      <HintPath>C:\Users\user\.nuget\packages\google.apis.auth\1.38.2\lib\netstandard2.0\Google.Apis.Auth.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices">
+      <HintPath>C:\Users\user\.nuget\packages\google.apis.auth\1.38.2\lib\netstandard2.0\Google.Apis.Auth.PlatformServices.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Google.Apis.Core">
+      <HintPath>C:\Users\user\.nuget\packages\google.apis.core\1.38.2\lib\netstandard2.0\Google.Apis.Core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Google.Apis">
+      <HintPath>C:\Users\user\.nuget\packages\google.apis\1.38.2\lib\netstandard2.0\Google.Apis.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>C:\Users\user\.nuget\packages\google.protobuf\3.6.1\lib\netstandard1.0\Google.Protobuf.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>C:\Users\user\.nuget\packages\htmlagilitypack\1.11.17\lib\netstandard2.0\HtmlAgilityPack.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="HtmlRenderer">
+      <HintPath>C:\Users\user\.nuget\packages\htmlrenderer.core\1.5.1-beta1\lib\net45\HtmlRenderer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="HtmlRenderer.PdfSharp">
+      <HintPath>C:\Users\user\.nuget\packages\htmlrenderer.pdfsharp\1.5.1-beta1\lib\net45\HtmlRenderer.PdfSharp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\user\.nuget\packages\itextsharp\5.5.13\lib\itextsharp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker">
+      <HintPath>C:\Users\user\.nuget\packages\itextsharp.xmlworker\5.5.13\lib\itextsharp.xmlworker.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ITHit.WebDAV.Server.Web">
+      <HintPath>C:\Users\user\.nuget\packages\ithit.webdav.server.web\7.1.4830\lib\net451\ITHit.WebDAV.Server.Web.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MailBee.NET">
+      <HintPath>C:\Users\user\.nuget\packages\mailbee.net\11.2.0\lib\netstandard2.0\MailBee.NET.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MailChimp.Net">
+      <HintPath>C:\Users\user\.nuget\packages\mailchimp.net.v3\4.2.1\lib\netstandard1.3\MailChimp.Net.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Mandrill">
+      <HintPath>C:\Users\user\.nuget\packages\mandrill\3.1.0\lib\netstandard1.1\Mandrill.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnet.signalr.client\2.4.1\lib\netstandard2.0\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Antiforgery">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.antiforgery\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Antiforgery.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Cookies">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.cookies\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Cookies.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Core">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.core\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Facebook">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.facebook\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Facebook.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Google">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.google\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Google.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.JwtBearer">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.jwtbearer\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.microsoftaccount\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.OAuth">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.oauth\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.OAuth.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.openidconnect\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.Twitter">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.twitter\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.Twitter.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authentication.WsFederation">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authentication.wsfederation\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authentication.WsFederation.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authorization">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authorization\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authorization.Policy">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.authorization.policy\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Authorization.Policy.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Connections.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.connections.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Connections.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.CookiePolicy">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.cookiepolicy\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.CookiePolicy.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cors">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.cors\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Cors.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.cryptography.internal\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.cryptography.keyderivation\2.2.0\lib\netcoreapp2.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.dataprotection.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DataProtection">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.dataprotection\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Extensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.dataprotection.extensions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.DataProtection.Extensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Diagnostics.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.diagnostics.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Diagnostics">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.diagnostics\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.diagnostics.entityframeworkcore\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.diagnostics.healthchecks\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.HostFiltering">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.hostfiltering\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.HostFiltering.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.hosting.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.hosting\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.hosting.server.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Html.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.html.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Html.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Common">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.http.connections.common\1.1.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Connections.Common.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.http.connections\1.1.0\lib\netcoreapp2.2\Microsoft.AspNetCore.Http.Connections.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.http\2.2.2\lib\netstandard2.0\Microsoft.AspNetCore.Http.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Extensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.http.extensions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Extensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.HttpOverrides">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.httpoverrides\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.HttpOverrides.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.HttpsPolicy">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.httpspolicy\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.HttpsPolicy.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Identity">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.identity\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Identity.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.identity.entityframeworkcore\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Identity.UI">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.identity.ui\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Identity.UI.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Identity.UI.Views.V3">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.identity.ui\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Identity.UI.Views.V3.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Identity.UI.Views.V4">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.identity.ui\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.JsonPatch">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.jsonpatch\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.JsonPatch.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Localization">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.localization\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Localization.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Localization.Routing">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.localization.routing\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Localization.Routing.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.MiddlewareAnalysis">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.middlewareanalysis\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.ApiExplorer">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.apiexplorer\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.ApiExplorer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.core\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Cors">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.cors\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Cors.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.DataAnnotations">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.dataannotations\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.DataAnnotations.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Formatters.Json">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.formatters.json\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Formatters.Json.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.formatters.xml\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Localization">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.localization\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Localization.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Razor">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.razor\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Razor.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.razor.extensions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.RazorPages">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.razorpages\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.RazorPages.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.TagHelpers">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.taghelpers\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.TagHelpers.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.ViewFeatures">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.mvc.viewfeatures\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.NodeServices">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.nodeservices\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.NodeServices.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Owin">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.owin\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Owin.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Razor">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.razor\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Razor.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Razor.Language">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.razor.language\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Razor.Language.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Razor.Runtime">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.razor.runtime\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Razor.Runtime.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.ResponseCaching.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.responsecaching.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.ResponseCaching">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.responsecaching\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.ResponseCaching.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.ResponseCompression">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.responsecompression\2.2.0\lib\netcoreapp2.1\Microsoft.AspNetCore.ResponseCompression.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Rewrite">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.rewrite\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Rewrite.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.routing.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Routing.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.routing\2.2.0\lib\netcoreapp2.2\Microsoft.AspNetCore.Routing.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.HttpSys">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.server.httpsys\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Server.HttpSys.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.IIS">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.server.iis\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Server.IIS.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.IISIntegration">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.server.iisintegration\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Server.IISIntegration.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Core">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.server.kestrel.core\2.2.0\lib\netcoreapp2.1\Microsoft.AspNetCore.Server.Kestrel.Core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.server.kestrel\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Server.Kestrel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Https">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.server.kestrel.https\2.2.0\lib\netcoreapp2.1\Microsoft.AspNetCore.Server.Kestrel.Https.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.server.kestrel.transport.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.server.kestrel.transport.sockets\2.2.0\lib\netcoreapp2.1\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Session">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.session\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Session.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Common">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.signalr.common\1.1.0\lib\netcoreapp2.2\Microsoft.AspNetCore.SignalR.Common.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Core">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.signalr.core\1.1.0\lib\netstandard2.0\Microsoft.AspNetCore.SignalR.Core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.signalr\1.1.0\lib\netstandard2.0\Microsoft.AspNetCore.SignalR.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Protocols.Json">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.signalr.protocols.json\1.1.0\lib\netstandard2.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SpaServices">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.spaservices\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.SpaServices.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SpaServices.Extensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.spaservices.extensions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.SpaServices.Extensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.StaticFiles">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.staticfiles\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.StaticFiles.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebSockets">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.websockets\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebSockets.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnetcore.webutilities\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.WebKey">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.azure.keyvault.webkey\3.0.3\lib\netstandard1.4\Microsoft.Azure.KeyVault.WebKey.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.codeanalysis.csharp\2.8.0\lib\netstandard1.3\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.codeanalysis.common\2.8.0\lib\netstandard1.3\Microsoft.CodeAnalysis.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Razor">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.codeanalysis.razor\2.2.0\lib\netstandard2.0\Microsoft.CodeAnalysis.Razor.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\Microsoft.CSharp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Diagnostics.FastSerialization">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.diagnostics.tracing.traceevent\2.0.2\lib\netstandard1.6\Microsoft.Diagnostics.FastSerialization.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Diagnostics.Tracing.TraceEvent">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.diagnostics.tracing.traceevent\2.0.2\lib\netstandard1.6\Microsoft.Diagnostics.Tracing.TraceEvent.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.DotNet.PlatformAbstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.dotnet.platformabstractions\2.1.0\lib\netstandard1.3\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.entityframeworkcore.abstractions\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Design">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.entityframeworkcore.design\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Design.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.InMemory">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.entityframeworkcore.inmemory\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.InMemory.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational.Design">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.entityframeworkcore.relational.design\1.1.6\lib\netstandard1.3\Microsoft.EntityFrameworkCore.Relational.Design.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.entityframeworkcore.relational\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer.Design">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.entityframeworkcore.sqlserver.design\1.1.6\lib\netstandard1.3\Microsoft.EntityFrameworkCore.SqlServer.Design.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.entityframeworkcore.sqlserver\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.caching.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.caching.memory\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.SqlServer">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.caching.sqlserver\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.SqlServer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.binder\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.CommandLine">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.commandline\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.CommandLine.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.EnvironmentVariables">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.environmentvariables\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.fileextensions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Ini">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.ini\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Ini.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.json\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.KeyPerFile">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.keyperfile\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.KeyPerFile.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.UserSecrets">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.usersecrets\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Xml">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.configuration.xml\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Xml.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.dependencyinjection\2.2.0\lib\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.dependencymodel\2.1.0\lib\netstandard1.6\Microsoft.Extensions.DependencyModel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DiagnosticAdapter">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.diagnosticadapter\2.2.0\lib\netcoreapp2.0\Microsoft.Extensions.DiagnosticAdapter.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.diagnostics.healthchecks.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Diagnostics.HealthChecks">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.diagnostics.healthchecks\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.fileproviders.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Composite">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.fileproviders.composite\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Composite.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Embedded">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.fileproviders.embedded\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Embedded.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.fileproviders.physical\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.filesystemglobbing\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.hosting.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.hosting\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Http">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.http\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Http.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Identity.Core">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.identity.core\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Identity.Core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Identity.Stores">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.identity.stores\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Localization.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.localization.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Localization">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.localization\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Localization.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.logging.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Configuration">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.logging.configuration\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Configuration.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Console">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.logging.console\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Console.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Debug">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.logging.debug\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Debug.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.logging\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.EventSource">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.logging.eventsource\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.EventSource.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.TraceSource">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.logging.tracesource\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.TraceSource.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.objectpool\2.2.0\lib\netstandard2.0\Microsoft.Extensions.ObjectPool.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options.ConfigurationExtensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.options.configurationextensions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options.DataAnnotations">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.options.dataannotations\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.DataAnnotations.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.options\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.PlatformAbstractions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.platformabstractions\1.1.0\lib\netstandard1.3\Microsoft.Extensions.PlatformAbstractions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.primitives\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.WebEncoders">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.extensions.webencoders\2.2.0\lib\netstandard2.0\Microsoft.Extensions.WebEncoders.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.identitymodel.jsonwebtokens\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.identitymodel.logging\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Logging.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.identitymodel.protocols\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.identitymodel.protocols.openidconnect\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.WsFederation">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.identitymodel.protocols.wsfederation\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.WsFederation.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.identitymodel.tokens\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens.Saml">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.identitymodel.tokens.saml\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.Saml.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Xml">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.identitymodel.xml\5.3.0\lib\netstandard2.0\Microsoft.IdentityModel.Xml.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.net.http.headers\2.2.0\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\Microsoft.VisualBasic.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\Microsoft.Win32.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.win32.registry\4.6.0\ref\netstandard2.0\Microsoft.Win32.Registry.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.windowsazure.configurationmanager\3.2.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage.DataMovement">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.azure.storage.datamovement\0.9.0\lib\netstandard2.0\Microsoft.WindowsAzure.Storage.DataMovement.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>C:\Users\user\.nuget\packages\windowsazure.storage\9.3.3\lib\netstandard1.3\Microsoft.WindowsAzure.Storage.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Mono.Posix.NETStandard">
+      <HintPath>C:\Users\user\.nuget\packages\mono.posix.netstandard\1.0.0-beta2\ref\netstandard2.0\Mono.Posix.NETStandard.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MoreLinq">
+      <HintPath>C:\Users\user\.nuget\packages\morelinq\3.2.0\lib\netstandard2.0\MoreLinq.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Users\user\.nuget\packages\mysql.data\8.0.17\lib\netstandard2.0\MySql.Data.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFrameworkCore.Design">
+      <HintPath>C:\Users\user\.nuget\packages\mysql.data.entityframeworkcore.design\8.0.17\lib\netstandard1.6\MySql.Data.EntityFrameworkCore.Design.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFrameworkCore">
+      <HintPath>C:\Users\user\.nuget\packages\mysql.data.entityframeworkcore\8.0.17\lib\netstandard2.0\MySql.Data.EntityFrameworkCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Nancy">
+      <HintPath>C:\Users\user\.nuget\packages\nancy\2.0.0\lib\netstandard2.0\Nancy.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\netstandard.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson">
+      <HintPath>C:\Users\user\.nuget\packages\newtonsoft.json.bson\1.0.1\lib\netstandard1.3\Newtonsoft.Json.Bson.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\user\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>C:\Users\user\.nuget\packages\nlog\4.6.7\lib\netstandard2.0\NLog.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NLog.Extensions.Logging">
+      <HintPath>C:\Users\user\.nuget\packages\nlog.extensions.logging\1.6.1\lib\netstandard2.0\NLog.Extensions.Logging.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="oboe.managed.core">
+      <HintPath>C:\Users\user\.nuget\packages\appoptics.instrumentation\4.2.0\lib\netcoreapp2.1\oboe.managed.core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OSExtensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.diagnostics.tracing.traceevent\2.0.2\lib\netstandard1.6\OSExtensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>C:\Users\user\.nuget\packages\pdfsharp\1.50.4000-beta3b\lib\net20\PdfSharp.Charting.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>C:\Users\user\.nuget\packages\pdfsharp\1.50.4000-beta3b\lib\net20\PdfSharp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="QRCoder">
+      <HintPath>C:\Users\user\.nuget\packages\qrcoder\1.3.9\lib\netstandard2.0\QRCoder.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Remotion.Linq">
+      <HintPath>C:\Users\user\.nuget\packages\remotion.linq\2.2.0\lib\netstandard1.0\Remotion.Linq.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Renci.SshNet">
+      <HintPath>C:\Users\user\.nuget\packages\ssh.net\2016.1.0\lib\netstandard1.3\Renci.SshNet.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="RequestStrap">
+      <HintPath>C:\Users\user\.nuget\packages\requeststrap\0.2.0\lib\RequestStrap.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="RestSharp.NetCore">
+      <HintPath>C:\Users\user\.nuget\packages\restsharp.netcore\105.2.3\lib\netstandard1.6\RestSharp.NetCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="RestSharp.Newtonsoft.Json.NetCore">
+      <HintPath>C:\Users\user\.nuget\packages\restsharp.newtonsoft.json.netcore\1.0.0\lib\netstandard1.6\RestSharp.Newtonsoft.Json.NetCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Serilog.AspNetCore">
+      <HintPath>C:\Users\user\.nuget\packages\serilog.aspnetcore\2.1.1\lib\netstandard2.0\Serilog.AspNetCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>C:\Users\user\.nuget\packages\serilog\2.6.0\lib\netstandard1.3\Serilog.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Serilog.Extensions.Logging">
+      <HintPath>C:\Users\user\.nuget\packages\serilog.extensions.logging\2.0.0\lib\netstandard2.0\Serilog.Extensions.Logging.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Serilog.Settings.Configuration">
+      <HintPath>C:\Users\user\.nuget\packages\serilog.settings.configuration\3.0.1\lib\netstandard2.0\Serilog.Settings.Configuration.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File">
+      <HintPath>C:\Users\user\.nuget\packages\serilog.sinks.file\3.0.1\lib\netstandard1.3\Serilog.Sinks.File.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Serilog.Sinks.RollingFile">
+      <HintPath>C:\Users\user\.nuget\packages\serilog.sinks.rollingfile\3.0.1\lib\netstandard1.3\Serilog.Sinks.RollingFile.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SshNet.Security.Cryptography">
+      <HintPath>C:\Users\user\.nuget\packages\sshnet.security.cryptography\1.2.0\lib\netstandard1.3\SshNet.Security.Cryptography.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="StackifyLib.AspNetCore">
+      <HintPath>C:\Users\user\.nuget\packages\stackifylib.aspnetcore\2.1.1\lib\netstandard2.0\StackifyLib.AspNetCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="StackifyLib">
+      <HintPath>C:\Users\user\.nuget\packages\stackifylib\2.1.6\lib\netstandard2.0\StackifyLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Swashbuckle.AspNetCore">
+      <HintPath>C:\Users\user\.nuget\packages\swashbuckle.aspnetcore\4.0.1\lib\netstandard2.0\Swashbuckle.AspNetCore.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Swashbuckle.AspNetCore.Swagger">
+      <HintPath>C:\Users\user\.nuget\packages\swashbuckle.aspnetcore.swagger\4.0.1\lib\netstandard2.0\Swashbuckle.AspNetCore.Swagger.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Swashbuckle.AspNetCore.SwaggerGen">
+      <HintPath>C:\Users\user\.nuget\packages\swashbuckle.aspnetcore.swaggergen\4.0.1\lib\netstandard2.0\Swashbuckle.AspNetCore.SwaggerGen.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Swashbuckle.AspNetCore.SwaggerUI">
+      <HintPath>C:\Users\user\.nuget\packages\swashbuckle.aspnetcore.swaggerui\4.0.1\lib\netstandard2.0\Swashbuckle.AspNetCore.SwaggerUI.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.AppContext.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Buffers.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Collections.Concurrent.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Collections.Immutable.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Collections.NonGeneric.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Collections.Specialized.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ComponentModel.Annotations.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ComponentModel.DataAnnotations.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ComponentModel.EventBasedAsync.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ComponentModel.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ComponentModel.TypeConverter.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>C:\Users\user\.nuget\packages\system.configuration.configurationmanager\4.5.0\ref\netstandard2.0\System.Configuration.ConfigurationManager.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Configuration.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Console.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Data.Common.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Data.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>C:\Users\user\.nuget\packages\system.data.sqlclient\4.6.0\ref\netcoreapp2.1\System.Data.SqlClient.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Diagnostics.Contracts.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Diagnostics.Debug.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>C:\Users\user\.nuget\packages\system.diagnostics.diagnosticsource\5.0.0\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.PerformanceCounter">
+      <HintPath>C:\Users\user\.nuget\packages\system.diagnostics.performancecounter\4.5.0\ref\netstandard2.0\System.Diagnostics.PerformanceCounter.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Diagnostics.Process.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Diagnostics.StackTrace.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Diagnostics.Tools.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Diagnostics.TraceSource.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Diagnostics.Tracing.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>C:\Users\user\.nuget\packages\system.drawing.common\4.7.0\ref\netstandard2.0\System.Drawing.Common.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Drawing.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Drawing.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Dynamic.Runtime.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Globalization.Calendars.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Globalization.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Globalization.Extensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>C:\Users\user\.nuget\packages\system.identitymodel.tokens.jwt\5.3.0\lib\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Interactive.Async">
+      <HintPath>C:\Users\user\.nuget\packages\system.interactive.async\3.2.0\lib\netstandard2.0\System.Interactive.Async.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.Compression.Brotli">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.Compression.Brotli.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.Compression.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.Compression.FileSystem.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.Compression.ZipFile.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.FileSystem.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.FileSystem.DriveInfo.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.FileSystem.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.FileSystem.Watcher.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.IsolatedStorage.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.MemoryMappedFiles.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.Packaging">
+      <HintPath>C:\Users\user\.nuget\packages\system.io.packaging\4.5.0\ref\netstandard2.0\System.IO.Packaging.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.Pipelines">
+      <HintPath>C:\Users\user\.nuget\packages\system.io.pipelines\4.5.2\ref\netstandard1.3\System.IO.Pipelines.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.Pipes.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.IO.UnmanagedMemoryStream.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Linq.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Linq.Dynamic.Core">
+      <HintPath>C:\Users\user\.nuget\packages\system.linq.dynamic.core\1.0.9\lib\netstandard2.0\System.Linq.Dynamic.Core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Linq.Parallel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Linq.Queryable.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Memory.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.Http.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.aspnet.webapi.client\5.2.6\lib\netstandard2.0\System.Net.Http.Formatting.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.HttpListener">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.HttpListener.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Mail">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.Mail.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.NameResolution.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.NetworkInformation.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.Ping.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.Requests.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.Security.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.ServicePoint">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.ServicePoint.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.Sockets.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.WebClient">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.WebClient.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.WebHeaderCollection.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.WebProxy">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.WebProxy.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.WebSockets.Client.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Net.WebSockets.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.WebSocketProtocol">
+      <HintPath>C:\Users\user\.nuget\packages\system.net.websockets.websocketprotocol\4.5.1\ref\netstandard2.0\System.Net.WebSockets.WebSocketProtocol.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Numerics.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Numerics.Vectors.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ObjectModel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Reflection.DispatchProxy.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Reflection.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Reflection.Emit.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Reflection.Emit.ILGeneration.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Reflection.Emit.Lightweight.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Reflection.Extensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Reflection.Metadata.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Reflection.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Reflection.TypeExtensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Reflection.TypeExtensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Resources.Reader.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Resources.ResourceManager.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Resources.Writer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>C:\Users\user\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.Extensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.Handles.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.InteropServices.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Loader">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.Loader.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.Numerics.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.Serialization.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.Serialization.Formatters.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.Serialization.Json.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Runtime.Serialization.Xml.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.AccessControl">
+      <HintPath>C:\Users\user\.nuget\packages\system.security.accesscontrol\4.7.0\ref\netstandard2.0\System.Security.AccessControl.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Security.Claims.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Cng">
+      <HintPath>C:\Users\user\.nuget\packages\system.security.cryptography.cng\4.5.0\ref\netcoreapp2.1\System.Security.Cryptography.Cng.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Security.Cryptography.Csp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Security.Cryptography.Encoding.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs">
+      <HintPath>C:\Users\user\.nuget\packages\system.security.cryptography.pkcs\4.5.2\ref\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Security.Cryptography.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml">
+      <HintPath>C:\Users\user\.nuget\packages\system.security.cryptography.xml\4.5.0\ref\netstandard2.0\System.Security.Cryptography.Xml.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Security.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>C:\Users\user\.nuget\packages\system.security.permissions\4.7.0\ref\netstandard2.0\System.Security.Permissions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Security.Principal.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>C:\Users\user\.nuget\packages\system.security.principal.windows\4.7.0\ref\netstandard2.0\System.Security.Principal.Windows.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Security.SecureString.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>C:\Users\user\.nuget\packages\system.servicemodel.primitives\4.5.3\ref\netstandard2.0\System.ServiceModel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>C:\Users\user\.nuget\packages\system.servicemodel.duplex\4.4.4\ref\netstandard2.0\System.ServiceModel.Duplex.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>C:\Users\user\.nuget\packages\system.servicemodel.http\4.5.3\ref\netstandard2.0\System.ServiceModel.Http.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>C:\Users\user\.nuget\packages\system.servicemodel.nettcp\4.4.4\ref\netstandard2.0\System.ServiceModel.NetTcp.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>C:\Users\user\.nuget\packages\system.servicemodel.primitives\4.5.3\ref\netstandard2.0\System.ServiceModel.Primitives.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>C:\Users\user\.nuget\packages\system.servicemodel.security\4.5.3\ref\netstandard2.0\System.ServiceModel.Security.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ServiceModel.Web.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ServiceProcess.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>C:\Users\user\.nuget\packages\system.text.encoding.codepages\4.5.1\lib\netstandard2.0\System.Text.Encoding.CodePages.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Text.Encoding.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Text.Encoding.Extensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>C:\Users\user\.nuget\packages\system.text.encodings.web\4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Text.RegularExpressions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading.Channels">
+      <HintPath>C:\Users\user\.nuget\packages\system.threading.channels\4.5.0\lib\netcoreapp2.1\System.Threading.Channels.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Threading.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Threading.Overlapped.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Threading.Tasks.Dataflow.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Threading.Tasks.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Threading.Tasks.Extensions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Threading.Tasks.Parallel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Threading.Thread.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Threading.ThreadPool.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Threading.Timer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Transactions.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Transactions.Local">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Transactions.Local.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ValueTuple.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Web.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Web.Helpers.Crypto">
+      <HintPath>C:\Users\user\.nuget\packages\system.web.helpers.crypto\3.2.3\lib\net40\System.Web.Helpers.Crypto.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Web.HttpUtility">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Web.HttpUtility.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Windows.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Xml.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Xml.Linq.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Xml.ReaderWriter.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Xml.Serialization.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Xml.XDocument.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Xml.XmlDocument.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Xml.XmlSerializer.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Xml.XPath.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Xml.XPath.XDocument.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XmlDocument">
+      <HintPath>C:\Users\user\.nuget\packages\system.xml.xpath.xmldocument\4.3.0\ref\netstandard1.3\System.Xml.XPath.XmlDocument.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="TraceReloggerLib">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.diagnostics.tracing.traceevent\2.0.2\lib\netstandard1.6\TraceReloggerLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Twilio">
+      <HintPath>C:\Users\user\.nuget\packages\twilio\5.26.1\lib\netstandard2.0\Twilio.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\WindowsBase.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Xceed.Words.NET">
+      <HintPath>C:\Users\user\.nuget\packages\docx\1.3.0\lib\net40\Xceed.Words.NET.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <Target Name="FakesAddAliases" BeforeTargets="ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Include="D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Comercial\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Comercial.dll">
+        <Aliases>bsiiac</Aliases>
+      </ReferencePath>
+      <ReferencePath Include="D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Base\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Base.dll">
+        <Aliases>bsiiab</Aliases>
+      </ReferencePath>
+      <ReferencePath Include="D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Persistencia\bin\Debug\netcoreapp2.2\BSI.Integra.Persistencia.dll">
+        <Aliases>bsiip</Aliases>
+      </ReferencePath>
+      <ReferencePath Include="C:\Users\user\.nuget\packages\microsoft.entityframeworkcore\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll">
+        <Aliases>mefc</Aliases>
+      </ReferencePath>
+      <ReferencePath Include="C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.ComponentModel.dll">
+        <Aliases>scm</Aliases>
+      </ReferencePath>
+      <ReferencePath Include="D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.DTOs\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.DTOs.dll">
+        <Aliases>bsiiadto</Aliases>
+      </ReferencePath>
+      <ReferencePath Include="C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Collections.dll">
+        <Aliases>sc</Aliases>
+      </ReferencePath>
+      <ReferencePath Include="D:\NUEVOBSGINSTITUTE\SERVICIOS\Integra V4 - Git\BSI.Integra.Aplicacion.Transversal\bin\Debug\netcoreapp2.2\BSI.Integra.Aplicacion.Transversal.dll">
+        <Aliases>bsiiat</Aliases>
+      </ReferencePath>
+      <ReferencePath Include="C:\Users\user\.nuget\packages\microsoft.netcore.app\2.2.0\ref\netcoreapp2.2\System.Linq.Expressions.dll">
+        <Aliases>sle</Aliases>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
+</Project>

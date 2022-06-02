@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.Base\BSI.Integra.Aplicacion.Base.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Aplicacion.DTOs\BSI.Integra.Aplicacion.DTOs.csproj" />
+    <ProjectReference Include="..\BSI.Integra.Persistencia\BSI.Integra.Persistencia.csproj" />
+  </ItemGroup>
+
+</Project>
